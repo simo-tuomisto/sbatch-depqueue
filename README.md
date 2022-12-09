@@ -22,7 +22,7 @@ bash sbatch-depqueue.sh my_slurm_script.sh number_of_dependency_jobs
 Submit a single job with sbatch
 
 ```sh
-$ sbatch depqueue-example.sh 
+$ sbatch examples/depqueue-example.sh 
 Submitted batch job 10371520
 ```
 
@@ -37,7 +37,7 @@ $ squeue -u $USER
 Submit a job with three dependencies as a queue
 
 ```sh
-$ bash sbatch-depqueue.sh depqueue-example.sh 3
+$ ./sbatch-depqueue.sh examples/depqueue-example.sh 3
 Submitting initial job.
 Submitting dependency number 1 that depends on job number 10371878.
 Submitting dependency number 2 that depends on job number 10371879.
