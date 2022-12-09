@@ -19,6 +19,8 @@ bash sbatch-depqueue.sh my_slurm_script.sh number_of_dependency_jobs
 
 ## Example
 
+### Running the example in a traditional way
+
 Submit a single job with sbatch
 
 ```sh
@@ -33,6 +35,8 @@ $ squeue -u $USER
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
           10371520 batch-csl depqueue tuomiss1 PD       0:00      1 (None)
 ```
+
+### Running the example as dependency queue
 
 Submit a job with three dependencies as a queue
 
