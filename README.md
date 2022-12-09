@@ -19,7 +19,10 @@ bash sbatch-depqueue.sh my_slurm_script.sh number_of_dependency_jobs
 
 ## Example
 
-### Running the example in a traditional way
+`examples/depqueue-example.sh` contains a simple example script that
+prints some information about the job and waits a minute.
+
+### Running the example without dependency queue
 
 Submit a single job with sbatch
 
